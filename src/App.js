@@ -100,7 +100,7 @@ class App extends Component {
           </section>
 
 
-
+          {/* <div style="display:flex;justify-content:center;align-items:center;">Text Content</div> */}
         </main>
         
       </div>
