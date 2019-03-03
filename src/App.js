@@ -10,9 +10,7 @@ class App extends Component {
     return (
       <div className="App">
         <BrowserRouter basename={process.env.PUBLIC_URL}>
-          <div className="fillParent">
-            <Route exact path="/" component={Home} />
-          </div>
+          <Route exact path="/" component={Home} />
         </BrowserRouter>
       </div>
     );
