@@ -11,7 +11,7 @@ class App extends Component {
       <div className="App">
         <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Route exact path="/" component={Home} />
-        </BrowserRouter>
+        </BrowserRouter> 
       </div>
     );
   }
