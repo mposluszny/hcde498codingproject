@@ -56,7 +56,7 @@ class Home extends Component {
                     </section>
 
                     <section>
-                        <h2 className="display-2 font-weight-bold py-5">Did you know?</h2>
+                        <h2 className="display-2 py-5">Did you know?</h2>
                         <div className="container">
                             <div className="row">
                                 <div className="col">
