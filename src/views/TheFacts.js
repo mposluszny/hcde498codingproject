@@ -38,8 +38,14 @@ class TheFacts extends Component {
                 </nav>
 
                 <main className="container-fluid">
-                    <p>The Facts</p>
+                    <section className="row showcase-img">
+                        <div className="centered">
+                            <h1 className="display-1">The Facts</h1>
+                        </div>
+                    </section>
                 </main>
+
+                <nav className="navbar navbar-expand-lg"></nav>
             </div>
         );
     }

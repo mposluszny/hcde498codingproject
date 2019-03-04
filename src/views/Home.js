@@ -95,6 +95,8 @@ class Home extends Component {
                         </div>
                     </section>
                 </main>
+
+                <nav className="navbar navbar-expand-lg"></nav>
             </div>
         );
     }

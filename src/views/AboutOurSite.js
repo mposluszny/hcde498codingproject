@@ -40,6 +40,8 @@ class AboutOurSite extends Component {
                 <main className="container-fluid">
                     <p>About Our Site</p>
                 </main>
+
+                <nav className="navbar navbar-expand-lg"></nav>
             </div>
         );
     }

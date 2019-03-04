@@ -52,6 +52,8 @@ class HowToHelp extends Component {
 
                     <p>How to Help</p>
                 </main>
+
+                <nav className="navbar navbar-expand-lg"></nav>
             </div>
         );
     }
