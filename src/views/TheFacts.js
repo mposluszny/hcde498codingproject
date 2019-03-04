@@ -43,6 +43,11 @@ class TheFacts extends Component {
                             <h1 className="display-1">The Facts</h1>
                         </div>
                     </section>
+
+                    <section>
+                        <h2 className="display-2 py-5">Statistics</h2>
+                        <p>On any given night, there are over 600,000 homeless people in the U.S., according to the US Department of Housing and Urban Development (HUD).</p>
+                    </section>
                 </main>
 
                 <nav className="navbar navbar-expand-lg"></nav>
