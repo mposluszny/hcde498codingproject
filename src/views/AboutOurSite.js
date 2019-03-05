@@ -49,11 +49,11 @@ class AboutOurSite extends Component {
                     </List>
                 </nav>
 
-                <main className="container-fluid">
+                <main className="container-fluid ">
                     <section className="row showcase-img">
                         <img className="container-fluid p-0 height opacity60" src={seattle1} alt="Seattle" />
-                        <div className="centered">
-                            <h1 className="display-1">About Our Site</h1>
+                        <div className="centered expand-center">
+                            <h1 className="heading1">About Our Site</h1>
                         </div>
                     </section>
 

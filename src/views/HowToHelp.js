@@ -52,8 +52,8 @@ class HowToHelp extends Component {
                 <main className="container-fluid">
                     <section className="row showcase-img">
                         <img className="container-fluid p-0 height opacity60" src={volunteer1} alt="Volunteers" />
-                        <div className="centered">
-                            <h1 className="display-1">How To Help</h1>
+                        <div className="centered expand-center">
+                            <h1 className="heading1">How To Help</h1>
                             <form class="form-inline my-2 my-lg-0">
                                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
                             </form>

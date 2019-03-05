@@ -55,10 +55,10 @@ class Home extends Component {
 
                 <main className="container-fluid">
                     <section className="row showcase-img">
-                        <img className="container-fluid p-0 opacity60" src={homepageimage1} alt="Hands" />
+                        <img className="container-fluid p-0 opacity60 height" src={homepageimage1} alt="Hands" />
                         <div className="centered expand-center">
                             <h1 className="heading1">Hope in Seattle</h1>
-                            <p className="h2">Our goal is to connect you to opportunities where you can apply your skills to help the homeless community in Seattle</p>
+                            <p className="quote">Our goal is to connect you to opportunities where you can apply your skills to help the homeless community in Seattle</p>
                             <button className="btn btn-primary btn-warning btn-lg" onClick={() => this.handleItemClicked(3)}>
                                 How to Help
                             </button>

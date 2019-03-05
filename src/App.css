@@ -132,4 +132,8 @@
     .expand-center {
       width: 90%;
     }
+
+    .statistics-width {
+      width: 50%;
+    }
   }
