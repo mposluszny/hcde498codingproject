@@ -55,3 +55,75 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.website-title, .quote, .heading2 {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+
+
+
+
+@media only screen and (max-width: 400px) {
+  .heading1 {
+    font-size: 35pt;
+
+  }
+
+  .quote {
+    font-size: 12pt;
+  }
+  .heading2 {
+    font-size: 25pt;
+    
+  }
+  .button-font {
+    font-size: 10pt;
+  }
+
+  .expand-center {
+    width: 85%;
+  }
+  
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .heading1 {
+    font-size: 40pt;
+
+  }
+
+  .quote {
+    font-size: 16pt;
+  }
+
+  .heading2 {
+    font-size: 45pt;
+    
+  }
+ 
+  .expand-center {
+    width: 90%;
+  }
+ 
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+
+
+    .heading1 {
+      font-size: 50pt;
+      
+    }
+
+    .quote {
+      font-size: 20pt;
+    }
+    
+
+    .expand-center {
+      width: 90%;
+    }
+  }
