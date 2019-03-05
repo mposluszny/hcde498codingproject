@@ -6,6 +6,8 @@ import didyouknow1 from '../images/didyouknow1.jpeg';
 import didyouknow2 from '../images/didyouknow2.jpg';
 import didyouknow3 from '../images/didyouknow3.jpg';
 
+import { List, ListItem, ListItemText } from '@material-ui/core';
+
 class Home extends Component {
     handleItemClicked = (selectedIndex) => {
         var nextPath = '';
@@ -35,21 +37,29 @@ class Home extends Component {
             <div>
                 <nav className="navbar navbar-expand-lg">
                     <div className="navbar-brand">Hope in Seattle</div>
-                    <ul className="navbar-nav ml-auto">
-                        <li className="nav-item" onClick={() => this.handleItemClicked(0)}>Home</li>
-                        <li className="nav-item" onClick={() => this.handleItemClicked(1)}>About Our Site</li>
-                        <li className="nav-item" onClick={() => this.handleItemClicked(2)}>The Facts</li>
-                        <li className="nav-item" onClick={() => this.handleItemClicked(3)}>How to Help</li>
-                    </ul>
+                    <List className="navbar-nav ml-auto">
+                        <ListItem button className="nav-item" onClick={() => this.handleItemClicked(0)}>
+                            <ListItemText primary="Home" />
+                        </ListItem>
+                        <ListItem button className="nav-item" onClick={() => this.handleItemClicked(1)}>
+                            <ListItemText primary="About Our Site" />
+                        </ListItem>
+                        <ListItem button className="nav-item" onClick={() => this.handleItemClicked(2)}>
+                            <ListItemText primary="The Facts" />
+                        </ListItem>
+                        <ListItem button className="nav-item" onClick={() => this.handleItemClicked(3)}>
+                            <ListItemText primary="How to Help" />
+                        </ListItem>
+                    </List>
                 </nav>
 
                 <main className="container-fluid">
                     <section className="row showcase-img">
-                        <img className="container-fluid p-0 height opacity60" src={homepageimage1} alt="Hands" />
+                        <img className="container-fluid p-0 opacity60" src={homepageimage1} alt="Hands" />
                         <div className="centered expand-center">
                             <h1 className="heading1">Hope in Seattle</h1>
-                            <p className="quote">Our goal is to connect you to opportunities where you can apply your skills to help the homeless community in Seattle</p>
-                            <button className="btn btn-primary btn-warning btn-lg">
+                            <p className="h2">Our goal is to connect you to opportunities where you can apply your skills to help the homeless community in Seattle</p>
+                            <button className="btn btn-primary btn-warning btn-lg" onClick={() => this.handleItemClicked(3)}>
                                 How to Help
                             </button>
                         </div>
@@ -82,7 +92,7 @@ class Home extends Component {
                                 </div>
                             </div>
 
-                            <button className="btn btn-primary btn-warning btn-lg m-5">
+                            <button className="btn btn-primary btn-warning btn-lg m-5" onClick={() => this.handleItemClicked(2)}>
                                 Learn More
                             </button>
                         </div>
