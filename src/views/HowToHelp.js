@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import volunteer1 from '../images/volunteer1.jpg';
 
+import { List, ListItem, ListItemText } from '@material-ui/core';
+
 class HowToHelp extends Component {
     handleItemClicked = (selectedIndex) => {
         var nextPath = '';
@@ -31,12 +33,20 @@ class HowToHelp extends Component {
             <div>
                 <nav className="navbar navbar-expand-lg">
                     <div className="navbar-brand">Hope in Seattle</div>
-                    <ul className="navbar-nav ml-auto">
-                        <li className="nav-item" onClick={() => this.handleItemClicked(0)}>Home</li>
-                        <li className="nav-item" onClick={() => this.handleItemClicked(1)}>About Our Site</li>
-                        <li className="nav-item" onClick={() => this.handleItemClicked(2)}>The Facts</li>
-                        <li className="nav-item" onClick={() => this.handleItemClicked(3)}>How to Help</li>
-                    </ul>
+                    <List className="navbar-nav ml-auto">
+                        <ListItem button className="nav-item" onClick={() => this.handleItemClicked(0)}>
+                            <ListItemText primary="Home" />
+                        </ListItem>
+                        <ListItem button className="nav-item" onClick={() => this.handleItemClicked(1)}>
+                            <ListItemText primary="About Our Site" />
+                        </ListItem>
+                        <ListItem button className="nav-item" onClick={() => this.handleItemClicked(2)}>
+                            <ListItemText primary="The Facts" />
+                        </ListItem>
+                        <ListItem button className="nav-item" onClick={() => this.handleItemClicked(3)}>
+                            <ListItemText primary="How to Help" />
+                        </ListItem>
+                    </List>
                 </nav>
 
                 <main className="container-fluid">
@@ -50,7 +60,11 @@ class HowToHelp extends Component {
                         </div>
                     </section>
 
-                    <p>How to Help</p>
+                    <section>
+                        <p className="text-left m-5">Lorem ipsum dolor sit amet, altera essent delicatissimi has no. Meis ceteros quo at. Ea eam reque mnesarchum, sea ne elit dolore mollis, munere intellegebat eos at. An quod prima sit, quo laboramus maiestatis honestatis ad, eu soleat saperet appetere est. Usu vide atqui mandamus ut, civibus ancillae evertitur et duo. Mel quodsi adversarium ei, ne homero ubique mnesarchum eos, sea et exerci euripidis mnesarchum.</p>
+                        <p className="text-left m-5">Lorem ipsum dolor sit amet, altera essent delicatissimi has no. Meis ceteros quo at. Ea eam reque mnesarchum, sea ne elit dolore mollis, munere intellegebat eos at. An quod prima sit, quo laboramus maiestatis honestatis ad, eu soleat saperet appetere est. Usu vide atqui mandamus ut, civibus ancillae evertitur et duo. Mel quodsi adversarium ei, ne homero ubique mnesarchum eos, sea et exerci euripidis mnesarchum.</p>
+                        <p className="text-left m-5">Lorem ipsum dolor sit amet, altera essent delicatissimi has no. Meis ceteros quo at. Ea eam reque mnesarchum, sea ne elit dolore mollis, munere intellegebat eos at. An quod prima sit, quo laboramus maiestatis honestatis ad, eu soleat saperet appetere est. Usu vide atqui mandamus ut, civibus ancillae evertitur et duo. Mel quodsi adversarium ei, ne homero ubique mnesarchum eos, sea et exerci euripidis mnesarchum.</p>
+                    </section>
                 </main>
 
                 <nav className="navbar navbar-expand-lg"></nav>
