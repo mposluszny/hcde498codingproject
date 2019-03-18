@@ -6,7 +6,17 @@ import didyouknow1 from '../images/didyouknow1.jpeg';
 import didyouknow2 from '../images/didyouknow2.jpg';
 import didyouknow3 from '../images/didyouknow3.jpg';
 
-import { List, ListItem, ListItemText } from '@material-ui/core';
+import { List, ListItem, ListItemText, Hidden, withStyles } from '@material-ui/core';
+
+const style = {
+    width: '155px',
+};
+
+const styles = theme => ({
+    alignItems: {
+        textAlign: 'center',
+    },
+});
 
 class Home extends Component {
     handleItemClicked = (selectedIndex) => {
@@ -33,25 +43,33 @@ class Home extends Component {
     }
 
     render() {
+        const { classes } = this.props;
+
         return (
             <div>
-                <nav className="navbar navbar-expand-lg">
-                    <div className="navbar-brand">Hope in Seattle</div>
-                    <List className="navbar-nav ml-auto">
-                        <ListItem button className="nav-item" onClick={() => this.handleItemClicked(0)}>
-                            <ListItemText primary="Home" />
-                        </ListItem>
-                        <ListItem button className="nav-item" onClick={() => this.handleItemClicked(1)}>
-                            <ListItemText primary="About Our Site" />
-                        </ListItem>
-                        <ListItem button className="nav-item" onClick={() => this.handleItemClicked(2)}>
-                            <ListItemText primary="The Facts" />
-                        </ListItem>
-                        <ListItem button className="nav-item" onClick={() => this.handleItemClicked(3)}>
-                            <ListItemText primary="How to Help" />
-                        </ListItem>
-                    </List>
-                </nav>
+                <Hidden smDown>
+                    <nav className="navbar navbar-expand-lg bottom-shadow">
+                        <List className="navbar">
+                            <ListItem button className="navbar-brand" onClick={() => this.handleItemClicked(0)}>
+                                <ListItemText primary="Hope in Seattle" />
+                            </ListItem>
+                        </List>
+                        <List className="navbar-nav ml-auto">
+                            <ListItem style={style} button className="nav-item" onClick={() => this.handleItemClicked(0)}>
+                                <ListItemText className={classes.alignItems} primary="Home" />
+                            </ListItem>
+                            <ListItem style={style} button className="nav-item" onClick={() => this.handleItemClicked(1)}>
+                                <ListItemText className={classes.alignItems} primary="About Our Site" />
+                            </ListItem>
+                            <ListItem style={style} button className="nav-item" onClick={() => this.handleItemClicked(2)}>
+                                <ListItemText className={classes.alignItems} primary="The Facts" />
+                            </ListItem>
+                            <ListItem style={style} button className="nav-item" onClick={() => this.handleItemClicked(3)}>
+                                <ListItemText className={classes.alignItems} primary="How to Help" />
+                            </ListItem>
+                        </List>
+                    </nav>
+                </Hidden>
 
                 <main className="container-fluid">
                     <section className="row showcase-img">
@@ -101,8 +119,8 @@ class Home extends Component {
                     <section className="row showcase-img">
                         <img className="container-fluid p-0 height opacity60" src={homepageimage2} alt="Holding Hands" />
                         <div className="centered">
-                            <p className="quote">“<em>The purpose of life is not to be happy. It is to be useful, 
-                            to be honorable, to be compassionate, to have it make some 
+                            <p className="quote">“<em>The purpose of life is not to be happy. It is to be useful,
+                            to be honorable, to be compassionate, to have it make some
                             difference that you have lived and lived well.”</em></p>
                             <p className="quote">― Ralph Waldo Emerson</p>
                         </div>
@@ -115,4 +133,4 @@ class Home extends Component {
     }
 }
 
-export default Home;
+export default withStyles(styles)(Home);

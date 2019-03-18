@@ -2,7 +2,19 @@ import React, { Component } from 'react';
 
 import seattle1 from '../images/seattle1.png';
 
-import { List, ListItem, ListItemText } from '@material-ui/core';
+import { List, ListItem, ListItemText, Hidden, withStyles } from '@material-ui/core';
+
+
+const style = {
+    width: '155px',
+};
+
+const styles = theme => ({
+    alignItems: {
+        textAlign: 'center',
+
+    },
+});
 
 class AboutOurSite extends Component {
     handleItemClicked = (selectedIndex) => {
@@ -29,25 +41,33 @@ class AboutOurSite extends Component {
     }
 
     render() {
+        const { classes } = this.props;
+
         return (
             <div>
-                <nav className="navbar navbar-expand-lg">
-                    <div className="navbar-brand">Hope in Seattle</div>
-                    <List className="navbar-nav ml-auto">
-                        <ListItem button className="nav-item" onClick={() => this.handleItemClicked(0)}>
-                            <ListItemText primary="Home" />
-                        </ListItem>
-                        <ListItem button className="nav-item" onClick={() => this.handleItemClicked(1)}>
-                            <ListItemText primary="About Our Site" />
-                        </ListItem>
-                        <ListItem button className="nav-item" onClick={() => this.handleItemClicked(2)}>
-                            <ListItemText primary="The Facts" />
-                        </ListItem>
-                        <ListItem button className="nav-item" onClick={() => this.handleItemClicked(3)}>
-                            <ListItemText primary="How to Help" />
-                        </ListItem>
-                    </List>
-                </nav>
+                <Hidden smDown>
+                    <nav className="navbar navbar-expand-lg bottom-shadow">
+                        <List className="navbar">
+                            <ListItem button className="navbar-brand" onClick={() => this.handleItemClicked(0)}>
+                                <ListItemText primary="Hope in Seattle" />
+                            </ListItem>
+                        </List>
+                        <List className="navbar-nav ml-auto">
+                            <ListItem style={style} button className="nav-item" onClick={() => this.handleItemClicked(0)}>
+                                <ListItemText className={classes.alignItems} primary="Home" />
+                            </ListItem>
+                            <ListItem style={style} button className="nav-item" onClick={() => this.handleItemClicked(1)}>
+                                <ListItemText className={classes.alignItems} primary="About Our Site" />
+                            </ListItem>
+                            <ListItem style={style} button className="nav-item" onClick={() => this.handleItemClicked(2)}>
+                                <ListItemText className={classes.alignItems} primary="The Facts" />
+                            </ListItem>
+                            <ListItem style={style} button className="nav-item" onClick={() => this.handleItemClicked(3)}>
+                                <ListItemText className={classes.alignItems} primary="How to Help" />
+                            </ListItem>
+                        </List>
+                    </nav>
+                </Hidden>
 
                 <main className="container-fluid ">
                     <section className="row showcase-img">
@@ -68,4 +88,4 @@ class AboutOurSite extends Component {
     }
 }
 
-export default AboutOurSite;
+export default withStyles(styles)(AboutOurSite);

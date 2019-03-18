@@ -1,0 +1,38 @@
+[
+    {
+        "pictureUrl": "https://lh3.google.com/u/1/d/1UR8uFvWWO6YeNiA5xNt-XoWtkzFrovxb=w2560-h1168-iv1",
+        "position": "Childcare",
+        "organization": "Mary's Place",
+        "description": "Come help out the women get back on their feet by offering childcare services. Play with the kids, help with homework after school, and more!",
+        "typeOfOrganization": "Family Shelter",
+        "address": "113 Dexter Ave N, Seattle, WA 9810",
+        "phone": "(206) 621-8474"
+    },
+    {
+        "pictureUrl": "https://lh3.google.com/u/1/d/1CBL7ithXA2kzRqRqVW3XqO2fO9GJd5p_",
+        "position": "Mentor",
+        "organization": "Union Gospel Mission",
+        "description": "Looking for a new and transformational role that will be life changing for our residents AND you? Ready to make a year-long commitment to walk with, mentor and coach a man as he progresses through the program?",
+        "typeOfOrganization": "Men's Shelter",
+        "address": "318 2nd Ave Ext S, Seattle, WA 98104",
+        "phone": "(206) 622-5177"
+    },
+    {
+        "pictureUrl": "https://lh3.google.com/u/1/d/1CBL7ithXA2kzRqRqVW3XqO2fO9GJd5p_",
+        "position": "Mentor",
+        "organization": "Union Gospel Mission: Home",
+        "description": "Looking for a new and transformational role that will be life changing for our residents AND you? Ready to make a year-long commitment to walk with, mentor and coach a woman as she progresses through the program?",
+        "typeOfOrganization": "Women's Shelter",
+        "address": "318 2nd Ave Ext S, Seattle, WA 98104",
+        "phone": "(206) 622-5177"
+    },
+    {
+        "pictureUrl": "https://lh3.google.com/u/1/d/1rKuUqwH1im-b1HXbZE3jjTg3FDb6-Rec",
+        "position": "Childcare Provider",
+        "organization": "The Sacred Heart Shelter",
+        "description": "The program is looking for volunteers who can provide structured child-learning care to infants and toddlers while their mother is attending a class or a support group. Your help as a volunteer will allow the women to really focus on the discussion during the session.",
+        "typeOfOrganization": "Women's Shelter",
+        "address": "232 Warren Ave N, Seattle, WA 98109",
+        "phone": "(206) 285-7489"
+    }
+]

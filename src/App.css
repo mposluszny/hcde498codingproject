@@ -66,23 +66,27 @@
   font-family: Helvetica, Arial, sans-serif;
 }
 
+.bottom-shadow {
+  box-shadow: 0px 0px 15px 0px;
+}
 
-
-
+.bold {
+  font-weight: bold;
+}
 
 @media only screen and (max-width: 400px) {
   .heading1 {
     font-size: 35pt;
+  }
 
+  .heading2 {
+    font-size: 25pt;
   }
 
   .quote {
     font-size: 12pt;
   }
-  .heading2 {
-    font-size: 25pt;
-    
-  }
+
   .button-font {
     font-size: 10pt;
   }
@@ -100,25 +104,21 @@
 
   }
 
-  .quote {
-    font-size: 16pt;
+  .heading2 {
+    font-size: 45pt; 
   }
 
-  .heading2 {
-    font-size: 45pt;
-    
+  .quote {
+    font-size: 16pt;
   }
  
   .expand-center {
     width: 90%;
   }
- 
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-
-
     .heading1 {
       font-size: 50pt;
       
@@ -128,7 +128,6 @@
       font-size: 20pt;
     }
     
-
     .expand-center {
       width: 90%;
     }
