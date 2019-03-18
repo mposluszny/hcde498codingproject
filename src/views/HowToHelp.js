@@ -116,10 +116,10 @@ class Review extends Component {
                     </div>
                     <div className="col-sm-12 col-md-12 col-lg-10">
                         <h4>{model.position} at {model.organization}</h4>
-                        <p>Description: {model.description}</p>
-                        <p>Type of Organization: {model.typeOfOrganization}</p>
-                        <p>Address: {model.address}</p>
-                        <p>Phone: {model.phone}</p>
+                        <p><strong>Description:</strong> {model.description}</p>
+                        <p><strong>Type of Organization:</strong> {model.typeOfOrganization}</p>
+                        <p><strong>Address:</strong> {model.address}</p>
+                        <p><strong>Phone:</strong> {model.phone}</p>
                     </div>
                 </div>
                 <hr></hr>
