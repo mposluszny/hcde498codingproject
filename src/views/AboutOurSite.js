@@ -78,7 +78,7 @@ class AboutOurSite extends Component {
                     </section>
 
                     <section>
-                        <p className="text-left m-5">Hope in Seattle was created by two University of Washington students for a user-centered front-end web development course. The purpose of our website is to provide information on homelessness in Seattle and how to help.</p>
+                        <p className="text-left m-5">Hope in Seattle was created by two University of Washington students for a user-centered front-end web development course. The purpose of this website is to help potential volunteers find opportunities to help the homeless in Seattle by matching them up to volunteer positions that match their skill sets and interests. Homelessness is a huge problem in Seattle and the issue needs to be tackled at many different angles. Our website aims to connect people to the variety of positions that need to be filled to take steps on eradicating homelessness in Seattle.</p>
                     </section>
                 </main>
 
