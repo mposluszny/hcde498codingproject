@@ -3,7 +3,21 @@ import React, { Component } from 'react';
 import homeless1 from '../images/homeless1.jpg';
 import statistics1 from '../images/statistics1.jpg';
 
-import { List, ListItem, ListItemText } from '@material-ui/core';
+import { List, ListItem, ListItemText, Hidden, withStyles } from '@material-ui/core';
+
+
+const style = {
+    
+    width: '155px',
+    
+  };
+
+const styles = theme => ({
+    alignItems: {
+        textAlign: 'center',
+    },
+  
+  });
 
 class TheFacts extends Component {
     handleItemClicked = (selectedIndex) => {
@@ -30,25 +44,28 @@ class TheFacts extends Component {
     }
 
     render() {
+        const { classes} = this.props;
         return (
             <div>
-                <nav className="navbar navbar-expand-lg">
-                    <div className="navbar-brand">Hope in Seattle</div>
+                <Hidden smDown>
+                <nav className="navbar navbar-expand-lg bottom-shadow">
+                    <div className="navbar-brand bold">Hope in Seattle</div>
                     <List className="navbar-nav ml-auto">
-                        <ListItem button className="nav-item" onClick={() => this.handleItemClicked(0)}>
-                            <ListItemText primary="Home" />
+                        <ListItem  style={style} button className="nav-item" onClick={() => this.handleItemClicked(0)}>
+                            <ListItemText className={classes.alignItems} primary="Home" />
                         </ListItem>
-                        <ListItem button className="nav-item" onClick={() => this.handleItemClicked(1)}>
-                            <ListItemText primary="About Our Site" />
+                        <ListItem  style={style} button className="nav-item" onClick={() => this.handleItemClicked(1)}>
+                            <ListItemText className={classes.alignItems} primary="About Our Site" />
                         </ListItem>
-                        <ListItem button className="nav-item" onClick={() => this.handleItemClicked(2)}>
-                            <ListItemText primary="The Facts" />
+                        <ListItem style={style} button className="nav-item" onClick={() => this.handleItemClicked(2)}>
+                            <ListItemText className={classes.alignItems} primary="The Facts" />
                         </ListItem>
-                        <ListItem button className="nav-item" onClick={() => this.handleItemClicked(3)}>
-                            <ListItemText primary="How to Help" />
+                        <ListItem style={style} button className="nav-item" onClick={() => this.handleItemClicked(3)}>
+                            <ListItemText  className={classes.alignItems} primary="How to Help" />
                         </ListItem>
                     </List>
                 </nav>
+                </Hidden>
 
                 <main className="container-fluid">
                     <section className="row showcase-img">
@@ -82,4 +99,4 @@ class TheFacts extends Component {
     }
 }
 
-export default TheFacts;
+export default withStyles(styles)(TheFacts);
